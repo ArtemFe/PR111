@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Подписка на новости</h1>
+    
+    <form id="subscriptionForm">
+        <div class="input-field">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+            <span class="hint">Имя должно содержать только буквы.</span>
+            <span class="error" id="nameError"></span>
+        </div>
+        <div class="input-field">
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" required>
+            <span class="hint">Введите корректный адрес электронной почты.</span>
+            <span class="error" id="emailError"></span>
+        </div>
+        <div class="input-field">
+            <label for="phone">Телефон:</label>
+            <input type="text" id="phone" required maxlength="11">
+            <span class="hint">Телефонный номер должен состоять из 11 цифр.</span>
+            <span class="error" id="phoneError"></span>
+        </div>
+        <button type="submit" id="subscribeButton" disabled>Подписаться</button>
+    </form>
+
+<div id="successMessage" style="display:none;"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

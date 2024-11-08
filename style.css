@@ -1,0 +1,29 @@
+.input-field {
+    margin-bottom: 15px;
+}
+.hint {
+    display: none;
+    font-size: 12px;
+    color: #888; 
+    position: absolute; 
+    bottom: -20px; 
+    left: 0;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+#subscribeButton:disabled {
+    background-color: gray;
+}
+#subscribeButton {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+input:focus + .hint { 
+    display: block;
+}
